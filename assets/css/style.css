@@ -2405,7 +2405,16 @@ textarea.form-field {
 /* Media query for very small screens (430px and below) */
 @media screen and (max-width: 430px) {
   .section-text {
-    font-size: 12px; /* Make the text smaller for compact screens */
+    font-size: 14px; /* Make the text smaller for compact screens */
     line-height: 1.5; /* Maintain comfortable readability */
+  }
+
+  .footer-text{
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .testi-card .card-text{
+    font-size: 14px;
   }
 }
