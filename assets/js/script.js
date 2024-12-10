@@ -197,6 +197,16 @@ document.addEventListener("DOMContentLoaded", () => {
     origin: 'right', 
     delay: 200 
   });
+
+  sr.reveal('.from-top', { 
+    origin: 'top', 
+    delay: 200 
+  });
+
+  sr.reveal('.from-bottom', { 
+    origin: 'bottom', 
+    delay: 200 
+  });
 });
 
 

@@ -2409,10 +2409,15 @@ textarea.form-field {
     line-height: 1.5; /* Maintain comfortable readability */
   }
 
+  /* .section-title{
+    font-size: 4rem !important;
+  } */
+
   .footer-text{
     font-size: 14px;
     line-height: 1.5;
   }
+  
 
   .testi-card .card-text{
     font-size: 14px;
