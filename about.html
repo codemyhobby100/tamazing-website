@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 
+    - primary meta tags
+  -->
+    <title>Tamazing Events</title>
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./Spa_logo.png" type="image/svg+xml" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Rosario:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.cdnfonts.com/css/lovelace-script-trial"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - boxicon
+  -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - flaticon
+  -->
+    <link rel="stylesheet" href="assets/icon/flaticon.min.css" />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/lightbox.min.css" />
+    <!-- 
+    - preload images
+  -->
+    <!-- <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg"> -->
+    <!-- <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("Zn8razka08MrkrihU");
+      })();
+    </script>
+  </head>
+
+  <body>
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo"
+          ><img src="assets/images/spa-logo.png" alt=""
+        /></a>
+
+        <nav class="navbar" data-navbar>
+          <button
+            class="nav-close-btn"
+            aria-label="close menu"
+            data-nav-toggler
+          >
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+          <ul class="navbar-list">
+            <li>
+              <a href="index.html" class="navbar-link">Home</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link">About Us</a>
+            </li>
+
+            <li>
+              <a href="gallery.html" class="navbar-link">Gallery</a>
+            </li>
+
+            <li>
+              <a href="contact.html" class="navbar-link">Contact</a>
+            </li>
+            <!-- <li>
+              <a class="navbar-link" href="/cart.html" id="cart-icon"> 0</a>
+            </li> -->
+
+            <!-- <li>
+            <button onclick="payWithPaystack()">
+              <ion-icon name="cart-outline" class="cart"></ion-icon>
+            </button>
+          </li> -->
+          </ul>
+        </nav>
+
+        <div class="cart_menu">
+          <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+            <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+
+        <!-- <div class="cart-modal" data-cart-modal>
+        <div class="cart-content">
+          <h2>Your Cart</h2>
+          <ul class="cart-items"></ul>
+        </div>
+      </div> -->
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" aria-label="about" id="about">
+        <div class="container">
+          <div class="about-content">
+            <h2 class="h2 hero-title">
+              About Us
+              <!-- <span class="span">Clinic By Cali</span> -->
+            </h2>
+
+            <p class="section-text">
+              Tamazing Events is a leading full-service wedding and event planning company in Dallas, Texas. 
+              We specialize in creating unforgettable social events, corporate gatherings, and stunning weddings tailored to your unique style.
+
+              Our expert team ensures every detail reflects your vision, crafting personalized, 
+              stylish weddings and events that leave lasting impressions. Whether it’s a dream 
+              wedding or a corporate celebration, we bring creativity, precision, and passion to every project.
+
+              Choose Tamazing Events, the best event planner in Dallas, 
+              and let’s make your occasion extraordinary.
+            </p>
+
+            <a href="policy.html" class="btn">
+              <span class="span">Book Now</span>
+
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </a>
+          </div>
+
+          <div class="wrapper">
+            <div
+              class="hero-banner-1 img-holder"
+              style="--width: 400; --height: 550"
+            >
+              <img
+                src="./assets/images/case-study2.jpg"
+                width="400"
+                height="550"
+                alt="view of assortment of decor for interior shop"
+                class="img-cover"
+              />
+            </div>
+
+            <div
+              class="hero-banner-2 img-holder"
+              style="--width: 500; --height: 850"
+            >
+              <img
+                src="./assets/images/case-study3.jpg"
+                width="500"
+                height="850"
+                alt="ceramic craft ware"
+                class="img-cover"
+              />
+            </div>
+
+            <img
+              src="./assets/images/hero-shape.png"
+              width="570"
+              height="676"
+              alt="laves"
+              class="shape"
+            />
+          </div>
+        </div>
+      </section>
+      
+        <!-- 
+        - #Speciality
+      -->      
+
+      <section class="section specialties-section" id="specialties-section">
+        <div class="container">
+          <div class="speciality">
+            <h2 class="h2 section-title">Our Specialties</h2>
+            <p class="section-text">
+                Elevate your spa experience with our exclusive offerings designed to rejuvenate your body, mind, and spirit.
+            </p>
+          </div>
+          <div class="secondary-grid d-grid">
+            <div class="beach-data-wrapper image-box image-box-left">
+              <div class="beach-data">
+                <div class="beach-data-inner">
+                  <h3 class="beachname">Royal Weddings</h3>
+                  <span class="beach-location">
+                    <span class="accent-text">
+                      <i class="ri-heart-line heart"></i>
+                    </span> Dallas, TX, USA
+                  </span>
+                </div>
+                <a href="#" class="speciality-btn place-items-center">
+                    <i class='bx bx-chevron-right'></i>
+                </a>
+              </div>
+              <img src="assets/images/img3.jpg" alt="Royal Weddings">
+            </div>
+      
+            <div class="beach-data-wrapper image-box image-box-center">
+              <div class="beach-data">
+                <div class="beach-data-inner width-50">
+                  <h3 class="beachname">Traditional Events</h3>
+                  <span class="beach-location">
+                    <span class="accent-text">
+                      <i class="ri-heart-line heart"></i>
+                    </span> Dallas, TX, USA
+                  </span>
+                </div>
+                <a href="#" class="speciality-btn place-items-center">
+                    <i class='bx bx-chevron-right'></i>
+                </a>
+              </div>
+              <img src="assets/images/img170.jpg" alt="Traditional Events">
+            </div>
+      
+            <div class="beach-data-wrapper image-box image-box-right">
+              <div class="beach-data">
+                <div class="beach-data-inner">
+                  <h3 class="beachname">Flower Work</h3>
+                  <span class="beach-location">
+                    <span class="accent-text">
+                      <i class="ri-heart-line heart"></i>
+                    </span> Dallas, TX, USA
+                  </span>
+                </div>
+                <a href="#" class="speciality-btn place-items-center">
+                    <i class='bx bx-chevron-right'></i>
+                </a>
+              </div>
+              <img src="assets/images/img211.jpg" alt="Flower Work">
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+      <!-- Image -->
+       <!-- Start newsletter -->
+       <!-- <section class="newsletter section" id="newsletter">
+            <div class="newsletter-container">
+            </div>
+        </section>   -->
+
+      <!-- Package -->
+      <section class="section package" id="package">
+        <div class="container">
+            <h2 class="h2 section-title">Our Unique Services</h2>
+
+            <p class="section-text">
+                Elevate your spa experience with our exclusive offerings designed to rejuvenate your body, mind, and spirit.
+            </p>
+
+            <div class="pricing-table"> 
+                <div class="col">
+                    <div class="table animate-top">
+                        <div class="price">
+                            Hall Decoration
+                            <span></span>
+                        </div>
+                        <ul>
+                            <li><strong></strong>Chair Design</li>
+                            <li><strong></strong>Flower Designs</li>
+                            <li><strong></strong>Red Carpet</li>
+                            <li><strong></strong>Glitter Work</li>
+                        </ul>
+                        <a href="newcontact2.html">Book Now</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="table animate-top">
+                        <div class="pop">Popular</div>
+                        <div class="price">
+                            Event Planning
+                            <span></span>
+                        </div>
+                        <ul>
+                            <li><strong></strong>Hall Decoration</li>
+                            <li><strong></strong>Music DJ</li>
+                            <li><strong></strong>Dessert</li>
+                            <li><strong></strong>Food Buffet</li>
+                        </ul>
+                        <a href="newcontact2.html">Book Now</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="table animate-top">
+                        <div class="price">
+                            Wedding Planning
+                            <span></span>
+                        </div>
+                        <ul>
+                            <li><strong></strong>Hall Decoration</li>
+                            <li><strong></strong>Wedding Cloth</li>
+                            <li><strong></strong>Wedding Cake</li>
+                            <li><strong></strong>Food Buffet</li>
+                        </ul>
+                        <a href="newcontact2.html">Book Now</a>
+                    </div>
+                </div>
+        </div>
+      </section>
+
+      <!-- 
+        - #Case Study
+      -->
+
+      <!-- 
+  - #Case Study
+-->
+
+        <section class="section project" id="project" aria-label="project">
+            <div class="container">
+        
+            <h2 class="h2 section-title text-center">
+                Our Case study
+            </h2>
+        
+            <ul class="grid-list">
+        
+                <li>
+                <div class="project-card">
+        
+                    <figure class="card-banner img-holder" style="--width: 835; --height: 429;">
+                    <img src="./assets/images/case-study11.jpg" width="835" height="429" loading="lazy" alt="Book art design"
+                        class="img-cover">
+                    </figure>
+        
+                    <div class="card-content">
+                    <h3 class="h3">
+                        <a href="https://www.instagram.com/p/CoM_ahdgzhU/" class="card-title" target="_blank">Tamazing Events</a>
+                    </h3>
+        
+                    <a href="https://www.instagram.com/p/CoM_ahdgzhU/" class="card-tag" target="_blank">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                    </div>
+        
+                </div>
+                </li>
+        
+                <li>
+                <div class="project-card">
+        
+                    <figure class="card-banner img-holder" style="--width: 416; --height: 429;">
+                    <img src="./assets/images/case-study2.jpg" width="416" height="429" loading="lazy" alt="Graphic Design"
+                        class="img-cover">
+                    </figure>
+        
+                    <div class="card-content">
+                    <h3 class="h3">
+                        <a href="https://www.instagram.com/p/ClP_tdGDApA/" class="card-title" target="_blank">Tamazing Events</a>
+                    </h3>
+        
+                    <a href="https://www.instagram.com/p/ClP_tdGDApA/" class="card-tag" target="_blank">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                    </div>
+        
+                </div>
+                </li>
+        
+                <li>
+                <div class="project-card">
+        
+                    <figure class="card-banner img-holder" style="--width: 416; --height: 429;">
+                    <img src="./assets/images/case-study1.jpg" width="416" height="429" loading="lazy" alt="3d Digital Art"
+                        class="img-cover">
+                    </figure>
+        
+                    <div class="card-content">
+                    <h3 class="h3">
+                        <a href="https://www.instagram.com/p/CzMxsZ4ODqr/" class="card-title" target="_blank">Tamazing Events</a>
+                    </h3>
+        
+                    <a href="https://www.instagram.com/p/CzMxsZ4ODqr/" class="card-tag" target="_blank">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                    </div>
+        
+                </div>
+                </li>
+        
+                <li>
+                <div class="project-card">
+        
+                    <figure class="card-banner img-holder" style="--width: 416; --height: 429;">
+                    <img src="./assets/images/case-study3.jpg" width="416" height="429" loading="lazy" alt="Web Design"
+                        class="img-cover">
+                    </figure>
+        
+                    <div class="card-content">
+                    <h3 class="h3">
+                        <a href="https://www.instagram.com/p/CVBGAZAJWeB/" class="card-title" target="_blank">Tamazing Events</a>
+                    </h3>
+        
+                    <a href="https://www.instagram.com/p/CVBGAZAJWeB/" class="card-tag" target="_blank">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                    </div>
+        
+                </div>
+                </li>
+        
+                <li>
+                <div class="project-card">
+        
+                    <figure class="card-banner img-holder" style="--width: 416; --height: 429;">
+                    <img src="./assets/images/img2.jpg" width="416" height="429" loading="lazy"
+                        alt="Mobile App Design" class="img-cover">
+                    </figure>
+        
+                    <div class="card-content">
+                    <h3 class="h3">
+                        <a href="https://www.instagram.com/p/B3GeQstH96R/" class="card-title" target="_blank">Tamazing Events</a>
+                    </h3>
+        
+                    <a href="https://www.instagram.com/p/B3GeQstH96R/" class="card-tag" target="_blank">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                    </div>
+        
+                </div>
+                </li>
+        
+            </ul>
+        
+            </div>
+        </section>
+  
+
+      <!-- 
+        - #Newsletter
+      -->
+      
+      <section class="section newsletter">
+        <div class="container">
+          <div class="newsletter-content">
+            <p class="spots">📬 Stay in the loop!</p>
+            <h2 class="headline">Subscribe to our newsletter</h2>
+            <form class="newsletter-form">
+              <input
+                type="email"
+                class="newsletter-input"
+                placeholder="Enter your email address"
+                required
+              />
+              <button type="submit" class="newsletter-button">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      
+
+      </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="section footer-top">
+          <div class="footer-brand">
+            <a href="" class="footer-logo">Tamazing Events</a>
+            <!-- <a href="#" class="">Wax & Co</a> -->
+
+            <p class="footer-text">
+              At Tamazing Events, we bring creativity, beauty, and style to life, transforming every event into an extraordinary experience. 
+              From private parties to public and traditional celebrations, our seasoned professionals deliver unmatched decor in Dallas, Texas.
+
+              Let us make your next event unforgettable. Connect with us through the links below or contact us today!
+
+
+            </p>
+
+            <ul class="social-list">
+              <li>
+                <a href="tel:08132566576" class="social-link">
+                  <ion-icon name="call-outline"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="mailto:Infowaxandco@gmail.com" class="social-link">
+                  <ion-icon name="mail-outline"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://www.instagram.com/waxandcoclinics?igsh=bnlxbzRnOWtyYmFw&utm_source=qr"
+                  class="social-link"
+                >
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Explore Us</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Home</a>
+            </li>
+
+            <li>
+              <a href="#pricing" class="footer-link">About Us</a>
+            </li>
+
+            <li>
+              <a href="#gallery" class="footer-link">Gallery</a>
+            </li>
+
+            <li>
+              <a href="#blog" class="footer-link">Contact</a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Address</p>
+            </li>
+
+            <li>
+              <a
+                href="https://maps.app.goo.gl/CKeoK9N2LDdg5zNs5"
+                class="footer-link"
+              >
+                Dallas Texas
+              </a>
+            </li>
+          </ul>
+
+          <div class="footer-list">
+            <p class="footer-list-title">Get in Touch</p>
+
+            <p class="footer-text">
+              Question or feedback? We’d love to hear from you
+            </p>
+
+            <a href="#appointment" class="btn">
+              <span class="span">Book Now</span>
+
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright">Copyright 2024 Tamazing Events All Right Reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/lightbox-plus-jquery.min.js"></script>
+    <script src="https://checkout.flutterwave.com/v3.js"></script>
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.17/dist/lenis.min.js"></script> 
+
+    <!-- <script src="./assets/js/add-cart.js"></script> -->
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+  </body>
+</html>

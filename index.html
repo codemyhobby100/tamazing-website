@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 
+    - primary meta tags
+  -->
+    <title>Tamazing Events</title>
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./Spa_logo.png" type="image/svg+xml" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Rosario:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.cdnfonts.com/css/lovelace-script-trial"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - boxicon
+  -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - flaticon
+  -->
+    <link rel="stylesheet" href="assets/icon/flaticon.min.css" />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/lightbox.min.css" />
+    <!-- 
+    - preload images
+  -->
+    <!-- <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg"> -->
+    <!-- <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("Zn8razka08MrkrihU");
+      })();
+    </script>
+  </head>
+
+  <body>
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo"
+          ><img src="assets/images/spa-logo.png" alt=""
+        /></a>
+
+        <nav class="navbar" data-navbar>
+          <button
+            class="nav-close-btn"
+            aria-label="close menu"
+            data-nav-toggler
+          >
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+          <ul class="navbar-list">
+            <li>
+              <a href="#" class="navbar-link">Home</a>
+            </li>
+
+            <li>
+              <a href="about.html" class="navbar-link">About Us</a>
+            </li>
+
+            <li>
+              <a href="gallery.html" class="navbar-link">Gallery</a>
+            </li>
+
+            <li>
+              <a href="contact.html" class="navbar-link">Contact</a>
+            </li>
+            <!-- <li>
+              <a class="navbar-link" href="/cart.html" id="cart-icon"> 0</a>
+            </li> -->
+
+            <!-- <li>
+            <button onclick="payWithPaystack()">
+              <ion-icon name="cart-outline" class="cart"></ion-icon>
+            </button>
+          </li> -->
+          </ul>
+        </nav>
+
+        <div class="cart_menu">
+          <!-- <button class="nav-open-btn" aria-label="open cart" data-cart-toggler>        
+          <ion-icon name="cart-outline" class="cart"></ion-icon>
+        </button> -->
+
+          <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+            <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+
+        <!-- <div class="cart-modal" data-cart-modal>
+        <div class="cart-content">
+          <h2>Your Cart</h2>
+          <ul class="cart-items"></ul>
+        </div>
+      </div> -->
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+
+        <section class="section hero" aria-label="home" id="home">
+          <div class="container">
+            <div class="hero-content">
+              <br /><br />
+
+              <h1 class="h1 hero-title">
+                Tamazing Events <br />
+              </h1>
+              
+              <p class="span">Bringing your dream events to life with elegance and creativity.</p>
+              <p class="section-text"></p>
+
+              <!-- <a href="#appointment" class="btn">
+                <span class="span">Book Appointment</span>
+
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+              </a> -->
+            </div>
+          </div>
+        </section>
+        
+
+        <!-- 
+        - #ABOUT
+      -->
+
+        <section class="section about" aria-label="about" id="about">
+          <div class="container">
+            <div class="about-content">
+              <h2 class="h2 hero-title">
+                Our Story
+                <!-- <span class="span">Clinic By Cali</span> -->
+              </h2>
+
+              <p class="section-text">
+                Tamazing Events is a leading full-service wedding and event planning company in Dallas, Texas. 
+                We specialize in creating unforgettable social events, corporate gatherings, and stunning weddings tailored to your unique style.
+
+                Our expert team ensures every detail reflects your vision, crafting personalized, 
+                stylish weddings and events that leave lasting impressions. Whether it’s a dream 
+                wedding or a corporate celebration, we bring creativity, precision, and passion to every project.
+
+                Choose Tamazing Events, the best event planner in Dallas, 
+                and let’s make your occasion extraordinary.
+              </p>
+
+              <a href="policy.html" class="btn">
+                <span class="span">Book Now</span>
+
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+              </a>
+            </div>
+
+            <div class="wrapper about-images">
+              <div
+                class="hero-banner-1 img-holder"
+                style="--width: 400; --height: 550"
+              >
+                <img
+                  src="./assets/images/flower2.jpg"
+                  width="400"
+                  height="550"
+                  alt="view of assortment of decor for interior shop"
+                  class="img-cover"
+                />
+              </div>
+
+              <div
+                class="hero-banner-2 img-holder"
+                style="--width: 500; --height: 850"
+              >
+                <img
+                  src="./assets/images/flower.jpg"
+                  width="500"
+                  height="850"
+                  alt="ceramic craft ware"
+                  class="img-cover"
+                />
+              </div>
+
+              <img
+                src="./assets/images/hero-shape.png"
+                width="570"
+                height="676"
+                alt="laves"
+                class="shape"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #FEATURES
+      -->
+
+      <section class="feature" aria-label="features">
+
+        <div class="feature-banner has-bg-image has-after from-left"
+          style="background-image: url('./assets/images/img252.jpg')">
+          <button class="play-btn" aria-label="play video: man making handmade belt" id="playButton">
+            <img src="./assets/images/play.svg" width="60" height="60" loading="lazy" alt="play icon">
+          </button>
+        </div>
+
+        <div class="section feature-content from-right">
+          <div class="container">
+
+            <h2 class="h2 section-title">
+              Why Choose Us
+            </h2>
+
+            <p class="section-text">
+              Curabitur porttitor nulla vitae purus eleifend feugiat. Quisque faucibus sapien, ut porttitor lorem.
+            </p>
+
+            <ul class="feature-list">
+
+              <li>
+                <div class="feature-list-card">
+
+                  <div class="card-icon">
+                    <img src="./assets/images/feature-icon-1.svg" width="45" height="45" loading="lazy"
+                      alt="review icon">
+                  </div>
+
+                  <div>
+                    <h3 class="h4 card-title">100% Guarantee</h3>
+
+                    <p class="card-text">
+                      Vestibulum in eros at lectus commodo
+                    </p>
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="feature-list-card">
+
+                  <div class="card-icon">
+                    <img src="./assets/images/feature-icon-2.svg" width="45" height="45" loading="lazy"
+                      alt="badge icon">
+                  </div>
+
+                  <div>
+                    <h3 class="h4 card-title">Professional Staffs</h3>
+
+                    <p class="card-text">
+                      Vestibulum in eros at lectus commodo
+                    </p>
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="feature-list-card">
+
+                  <div class="card-icon">
+                    <img src="./assets/images/feature-icon-3.svg" width="45" height="45" loading="lazy"
+                      alt="money bag icon">
+                  </div>
+
+                  <div>
+                    <h3 class="h4 card-title">Affordable Price</h3>
+
+                    <p class="card-text">
+                      Vestibulum in eros at lectus commodo
+                    </p>
+                  </div>
+
+                </div>
+              </li>
+
+            </ul>
+
+            <p>
+              Nunc cursus ante libero, et convallis eros tristique nec. Fusce consequat lectus dui, nec laoreet purus
+              venenatis id.
+            </p>
+
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Modal -->
+      <div id="videoModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <video id="videoPlayer" controls>
+            <source src="assets/videos/ad.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+      
+
+        <!-- Services -->
+
+      <section class="section collection text-center" id="services">
+        <div class="container">
+          <h2 class="h2 section-title">Our Unique Services</h2>
+          <p class="section-text">
+            Elevate your spa experience with our exclusive offerings designed to rejuvenate your body, mind, and spirit.
+          </p>
+      
+          <ul class="grid-list">
+            <!-- Service 1 -->
+            <li>
+              <div class="service-card">
+                <div class="img-bx">
+                  <img src="assets/images/img3.jpg" alt="Event Planning" />
+                </div>
+                <h3 class="h3">Event Planning</h3>
+                <a href="waxing.html" class="card-btn" aria-label="more">
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+            </li>
+      
+            <!-- Service 2 -->
+            <li>
+              <div class="service-card">
+                <div class="img-bx">
+                  <img src="assets/images/img170.jpg" alt="Event Decor" />
+                </div>
+                <h3 class="h3">Event Decor</h3>
+                <a href="massage.html" class="card-btn" aria-label="more">
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+            </li>
+      
+            <!-- Service 3 -->
+            <li>
+              <div class="service-card">
+                <div class="img-bx">
+                  <img src="assets/images/img211.jpg" alt="Flower Work" />
+                </div>
+                <h3 class="h3">Flower Work</h3>
+                <a href="japanese.html" class="card-btn" aria-label="more">
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+            
+
+        <!-- <section class="gallery" id="gallery">
+          <h2 class="h2 section-title text-center" id="blog-label">
+            Our Gallery
+          </h2>
+          <div class="contain">
+            <div class="box a animate-top">
+              <a href="assets/images/wax2.jpg" data-lightbox="mygallery"
+                ><img src="assets/images/wax2.jpg"
+              /></a>
+            </div>
+            <div class="box b animate-top">
+              <a href="assets/images/massage10.jpg" data-lightbox="mygallery"
+                ><img src="assets/images/massage10.jpg"
+              /></a>
+            </div>
+            <div class="box c animate-top">
+              <a href="assets/images/wax8.jpg" data-lightbox="mygallery"
+                ><img src="assets/images/wax8.jpg"
+              /></a>
+            </div>
+            <div class="box d animate-top">
+              <a href="assets/images/wax1.jpg" data-lightbox="mygallery"
+                ><img src="assets/images/wax1.jpg"
+              /></a>
+            </div>
+            <div class="box e animate-top">
+              <a href="assets/images/wax4.jpg" data-lightbox="mygallery"
+                ><img src="assets/images/wax4.jpg"
+              /></a>
+            </div>
+            <div class="box f animate-bottom">
+              <a href="assets/images/slim.jpg" data-lightbox="mygallery"
+                ><img src="assets/images/slim.jpg"
+              /></a>
+            </div>
+            <div class="box g animate-bottom">
+              <a href="assets/images/spa3.jpg" data-lightbox="mygallery"
+                ><img src="assets/images/spa3.jpg"
+              /></a>
+            </div>
+            <div class="box h animate-bottom">
+              <a href="assets/images/feet2.jpeg" data-lightbox="mygallery">
+                <img src="assets/images/feet2.jpeg" />
+                </a
+              >
+            </div>
+            <div class="box i animate-bottom">
+              <a href="assets/images/wax6.jpg" data-lightbox="mygallery"
+                ><img src="assets/images/wax6.jpg"
+              /></a>
+            </div>
+            <div class="box j animate-bottom">
+              <a href="assets/images/spa6.jpg" data-lightbox="mygallery"
+                ><img src="assets/images/spa6.jpg" />
+              </a>
+            </div>
+          </div>
+        </section> -->
+
+
+
+        <!-- 
+        - #TESTIMONIALS
+      -->
+
+        <section
+          class="section testi"
+          aria-label="testimonials"
+          id="testimonials"
+        >
+          <h2 class="h2 section-title">Testimonials</h2>
+          <p class="section-text">What our esteemed clients have to say</p>
+          <div class="container">
+            <div class="testi-card">
+              <img
+                src="./assets/images/quote.png"
+                width="50"
+                height="50"
+                loading="lazy"
+                class="icon"
+                alt="quote"
+              />
+              <p class="card-text">
+                Finding a spa that caters to the needs of us older folks can be tough, but my experience at Wax & Co was extraordinary. The staff were warm and tailored treatments to suit my age-specific needs.
+              </p>
+              <p class="client-title">Tamazing Events</p>
+            </div>
+            <div class="testi-card">
+              <img
+                src="./assets/images/quote.png"
+                width="50"
+                height="50"
+                loading="lazy"
+                class="icon"
+                alt="quote"
+              />
+              <p class="card-text">
+                Tamazing Events turns each visit into a magical experience. Their special care for seniors and tailored treatments offer a rejuvenating and enchanting escape. Truly a serene and magical place!
+              </p>
+               <p class="client-title">Tamazing Events</p>
+            </div>
+
+            <div class="testi-card">
+              <img
+                src="./assets/images/quote.png"
+                width="50"
+                height="50"
+                loading="lazy"
+                class="icon"
+                alt="quote"
+              />
+
+              <p class="card-text">
+                Tamazing Events' customer service is outstanding. The staff's attentiveness and warmth made my experience incredibly relaxing and memorable. They truly value and care for their customers.
+              </p>
+              <p class="client-title">Tamazing Events</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #GALLERY
+      -->
+
+      <section class="gallery">
+
+        <ul class="gallery-list">
+
+          <li>
+            <div class="gallery-card has-bg-image has-after"
+              style="background-image: url('./assets/images/flower7.jpg')">
+              <div class="card-content">
+
+                <h3 class="h3 card-title"> </h3>
+
+                <a href="#" class="btn-link">
+                  <span class="span">View Gallery</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="gallery-card has-bg-image has-after"
+              style="background-image: url('./assets/images/wedding7.jpg')">
+              <div class="card-content">
+
+                <h3 class="h3 card-title"> </h3>
+
+                <a href="#" class="btn-link">
+                  <span class="span">View Gallery</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="gallery-card has-bg-image has-after"
+              style="background-image: url('./assets/images/flower5.jpg')">
+              <div class="card-content">
+
+                <h3 class="h3 card-title"> </h3>
+
+                <a href="#" class="btn-link">
+                  <span class="span">View Gallery</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="gallery-card has-bg-image has-after"
+              style="background-image: url('./assets/images/img4.jpg')">
+              <div class="card-content">
+
+                <h3 class="h3 card-title"> </h3>
+
+                <a href="#" class="btn-link">
+                  <span class="span">View Gallery</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </div>
+          </li>
+
+        </ul>
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #BLOG
+      -->
+
+      <section class="section blog" aria-labelledby="blog-label">
+        <div class="container">
+
+          <h2 class="h2 section-title text-center" id="blog-label">Blog & News</h2>
+
+          <p class="section-text text-center">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie ligula dignissim.
+          </p>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 1024; --height: 683;">
+                  <img src="./assets/images/flower4.jpg" width="1024" height="683" loading="lazy"
+                    alt="The Detail Process Of Decorating The Clay Vase At Pottery Studio" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h4">
+                    <a href="#" class="card-title">
+                      The Detail Process Of Decorating The Clay Vase At Pottery Studio
+                    </a>
+                  </h3>
+
+                  <div class="card-meta">
+
+                    <a href="#" class="card-meta-wrapper">
+                      <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">admin</span>
+                    </a>
+
+                    <time class="card-meta-wrapper" datetime="2022-10-12">
+                      <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">October 12, 2022</span>
+                    </time>
+
+                    <a href="#" class="card-meta-wrapper">
+                      <ion-icon name="folder-open-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">Tips & Trick</span>
+                    </a>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 1024; --height: 683;">
+                  <img src="./assets/images/table.jpg" width="1024" height="683" loading="lazy"
+                    alt="Skills And Techniques To Make A Genuine Leather Wallet" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h4">
+                    <a href="#" class="card-title">
+                      Skills And Techniques To Make A Genuine Leather Wallet
+                    </a>
+                  </h3>
+
+                  <div class="card-meta">
+
+                    <a href="#" class="card-meta-wrapper">
+                      <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">admin</span>
+                    </a>
+
+                    <time class="card-meta-wrapper" datetime="2022-10-12">
+                      <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">October 12, 2022</span>
+                    </time>
+
+                    <a href="#" class="card-meta-wrapper">
+                      <ion-icon name="folder-open-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">Tips & Trick</span>
+                    </a>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 1024; --height: 683;">
+                  <img src="./assets/images/wedding6.jpg" width="1024" height="683" loading="lazy"
+                    alt="5 Latest And Trending Handmade Crafts For Adults And Kids" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h4">
+                    <a href="#" class="card-title">
+                      5 Latest And Trending Handmade Crafts For Adults And Kids
+                    </a>
+                  </h3>
+
+                  <div class="card-meta">
+
+                    <a href="#" class="card-meta-wrapper">
+                      <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">admin</span>
+                    </a>
+
+                    <time class="card-meta-wrapper" datetime="2022-10-12">
+                      <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">October 12, 2022</span>
+                    </time>
+
+                    <a href="#" class="card-meta-wrapper">
+                      <ion-icon name="folder-open-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">Tips & Trick</span>
+                    </a>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 1024; --height: 683;">
+                  <img src="./assets/images/hall.jpg" width="1024" height="683" loading="lazy"
+                    alt="Homemade Business That Now Makes Hundreds Of Millions" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h4">
+                    <a href="#" class="card-title">
+                      Homemade Business That Now Makes Hundreds Of Millions
+                    </a>
+                  </h3>
+
+                  <div class="card-meta">
+
+                    <a href="#" class="card-meta-wrapper">
+                      <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">admin</span>
+                    </a>
+
+                    <time class="card-meta-wrapper" datetime="2022-10-12">
+                      <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">October 12, 2022</span>
+                    </time>
+
+                    <a href="#" class="card-meta-wrapper">
+                      <ion-icon name="folder-open-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">Tips & Trick</span>
+                    </a>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <a href="#" class="btn">
+            <span class="span">Read More</span>
+
+            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+          </a>
+
+        </div>
+      </section>
+
+
+      </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="section footer-top">
+          <div class="footer-brand">
+            <a href="" class="footer-logo">Tamazing Events</a>
+            <!-- <a href="#" class="">Wax & Co</a> -->
+
+            <p class="footer-text">
+              At Tamazing Events, we bring creativity, beauty, and style to life, transforming every event into an extraordinary experience. 
+              From private parties to public and traditional celebrations, our seasoned professionals deliver unmatched decor in Dallas, Texas.
+
+              Let us make your next event unforgettable. Connect with us through the links below or contact us today!
+
+
+            </p>
+
+            <ul class="social-list">
+              <li>
+                <a href="tel:08132566576" class="social-link">
+                  <ion-icon name="call-outline"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="mailto:Infowaxandco@gmail.com" class="social-link">
+                  <ion-icon name="mail-outline"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://www.instagram.com/waxandcoclinics?igsh=bnlxbzRnOWtyYmFw&utm_source=qr"
+                  class="social-link"
+                >
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Explore Us</p>
+            </li>
+
+            <li>
+              <a href="#about" class="footer-link">About Us</a>
+            </li>
+
+            <li>
+              <a href="#services" class="footer-link">Services</a>
+            </li>
+
+            <li>
+              <a href="#pricing" class="footer-link">Pricing</a>
+            </li>
+
+            <li>
+              <a href="#gallery" class="footer-link">Gallery</a>
+            </li>
+
+            <li>
+              <a href="#blog" class="footer-link">Blog & News</a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Address</p>
+            </li>
+
+            <li>
+              <a
+                href="https://maps.app.goo.gl/CKeoK9N2LDdg5zNs5"
+                class="footer-link"
+              >
+                Dallas Texas
+              </a>
+            </li>
+          </ul>
+
+          <div class="footer-list">
+            <p class="footer-list-title">Get in Touch</p>
+
+            <p class="footer-text">
+              Question or feedback? We’d love to hear from you
+            </p>
+
+            <a href="#appointment" class="btn">
+              <span class="span">Book Appointment</span>
+
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright">Copyright 2024 Tamazing Events All Right Reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/lightbox-plus-jquery.min.js"></script>
+    <script src="https://checkout.flutterwave.com/v3.js"></script>
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.17/dist/lenis.min.js"></script> 
+
+    <!-- <script src="./assets/js/add-cart.js"></script> -->
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+  </body>
+</html>

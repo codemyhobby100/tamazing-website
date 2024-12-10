@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 
+    - primary meta tags
+  -->
+    <title>Tamazing Events</title>
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./Spa_logo.png" type="image/svg+xml" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Rosario:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.cdnfonts.com/css/lovelace-script-trial"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - boxicon
+  -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - flaticon
+  -->
+    <link rel="stylesheet" href="assets/icon/flaticon.min.css" />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/lightbox.min.css" />
+    <!-- 
+    - preload images
+  -->
+    <!-- <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg"> -->
+    <!-- <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("Zn8razka08MrkrihU");
+      })();
+    </script>
+  </head>
+
+  <body>
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo"
+          ><img src="assets/images/spa-logo.png" alt=""
+        /></a>
+
+        <nav class="navbar" data-navbar>
+          <button
+            class="nav-close-btn"
+            aria-label="close menu"
+            data-nav-toggler
+          >
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+          <ul class="navbar-list">
+            <li>
+              <a href="index.html" class="navbar-link">Home</a>
+            </li>
+
+            <li>
+              <a href="about.html" class="navbar-link">About Us</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link">Gallery</a>
+            </li>
+
+            <li>
+              <a href="contact.html" class="navbar-link">Contact</a>
+            </li>
+            <!-- <li>
+              <a class="navbar-link" href="/cart.html" id="cart-icon"> 0</a>
+            </li> -->
+
+            <!-- <li>
+            <button onclick="payWithPaystack()">
+              <ion-icon name="cart-outline" class="cart"></ion-icon>
+            </button>
+          </li> -->
+          </ul>
+        </nav>
+
+        <div class="cart_menu">
+          <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+            <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+
+        <!-- <div class="cart-modal" data-cart-modal>
+        <div class="cart-content">
+          <h2>Your Cart</h2>
+          <ul class="cart-items"></ul>
+        </div>
+      </div> -->
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- 
+        - #Gallery
+      -->      
+        <section class="gallery-page section" id="gallery-page">
+            <div class="container">
+                <div class="gallery-text">
+                    <h2 class="h2 section-title text-center">
+                        Gallery
+                    </h2>
+                </div>
+                
+                <div class="contain">
+                    <div class="box a animate-top">
+                        <a href="assets/images/case-study7.jpg"  data-lightbox="mygallery"><img src="assets/images/case-study7.jpg"></a>
+                    </div>
+                    <div class="box b animate-top">
+                        <a href="assets/images/case-study4.jpg"  data-lightbox="mygallery"><img src="assets/images/case-study4.jpg"></a>
+                    </div>
+                    <div class="box c animate-top">
+                        <a href="assets/images/hall.jpg" data-lightbox="mygallery"><img src="assets/images/flower7.jpg"></a>
+                    </div>
+                    <div class="box d animate-top">
+                        <a href="assets/images/case-study12.jpg" data-lightbox="mygallery"><img src="assets/images/case-study12.jpg"></a>
+                    </div>
+                    <div class="box e animate-top">
+                        <a href="assets/images/wedding7.jpg" data-lightbox="mygallery"><img src="assets/images/wedding7.jpg"></a>
+                    </div>
+                    <div class="box f animate-bottom">
+                        <a href="assets/images/case-study11.jpg" data-lightbox="mygallery"><img src="assets/images/case-study11.jpg"></a>
+                    </div>
+                    <div class="box g animate-bottom">
+                        <a href="assets/images/flower4.jpg" data-lightbox="mygallery"><img src="assets/images/flower4.jpg"></a>
+                    </div>
+                    <div class="box h animate-bottom">
+                        <a href="assets/images/case-study2.jpg" data-lightbox="mygallery"></a><img src="assets/images/case-study2.jpg">
+                    </div>
+                    <div class="box i animate-bottom">
+                        <a href="assets/images/flower6.jpg" data-lightbox="mygallery"><img src="assets/images/flower6.jpg"></a> 
+                    </div>
+                    <div class="box j animate-bottom">
+                        <a href="assets/images/case-study3.jpg" data-lightbox="mygallery"><img src="assets/images/case-study3.jpg"> </a>  
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section trending-luxury">
+            <div class="container">
+          
+              <!-- CTA Content -->
+              <div class="cta-content text-center">
+                <h2 class="cta-title">Bring Your Vision to Life</h2>
+                <p class="cta-text">
+                  Transform your ideas into stunning events with our expert planning and decor services. Let's create something unforgettable!
+                </p>
+                <a href="#contact" class="cta-button">Book Now</a>
+              </div>
+          
+            </div>
+          </section>
+          
+      </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="section footer-top">
+          <div class="footer-brand">
+            <a href="" class="footer-logo">Tamazing Events</a>
+            <!-- <a href="#" class="">Wax & Co</a> -->
+
+            <p class="footer-text">
+              At Tamazing Events, we bring creativity, beauty, and style to life, transforming every event into an extraordinary experience. 
+              From private parties to public and traditional celebrations, our seasoned professionals deliver unmatched decor in Dallas, Texas.
+
+              Let us make your next event unforgettable. Connect with us through the links below or contact us today!
+
+
+            </p>
+
+            <ul class="social-list">
+              <li>
+                <a href="tel:08132566576" class="social-link">
+                  <ion-icon name="call-outline"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="mailto:Infowaxandco@gmail.com" class="social-link">
+                  <ion-icon name="mail-outline"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://www.instagram.com/waxandcoclinics?igsh=bnlxbzRnOWtyYmFw&utm_source=qr"
+                  class="social-link"
+                >
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Explore Us</p>
+            </li>
+
+            <li>
+              <a href="#about" class="footer-link">About Us</a>
+            </li>
+
+            <li>
+              <a href="#services" class="footer-link">Services</a>
+            </li>
+
+            <li>
+              <a href="#pricing" class="footer-link">Pricing</a>
+            </li>
+
+            <li>
+              <a href="#gallery" class="footer-link">Gallery</a>
+            </li>
+
+            <li>
+              <a href="#blog" class="footer-link">Blog & News</a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Address</p>
+            </li>
+
+            <li>
+              <a
+                href="https://maps.app.goo.gl/CKeoK9N2LDdg5zNs5"
+                class="footer-link"
+              >
+                Dallas Texas
+              </a>
+            </li>
+          </ul>
+
+          <div class="footer-list">
+            <p class="footer-list-title">Get in Touch</p>
+
+            <p class="footer-text">
+              Question or feedback? We’d love to hear from you
+            </p>
+
+            <a href="#appointment" class="btn">
+              <span class="span">Book Now</span>
+
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright">Copyright 2024 Tamazing Events All Right Reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/lightbox-plus-jquery.min.js"></script>
+    <script src="https://checkout.flutterwave.com/v3.js"></script>
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.17/dist/lenis.min.js"></script> 
+
+    <!-- <script src="./assets/js/add-cart.js"></script> -->
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+  </body>
+</html>

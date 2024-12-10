@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 
+    - primary meta tags
+  -->
+    <title>Tamazing Events</title>
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./Spa_logo.png" type="image/svg+xml" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Rosario:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.cdnfonts.com/css/lovelace-script-trial"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - boxicon
+  -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - flaticon
+  -->
+    <link rel="stylesheet" href="assets/icon/flaticon.min.css" />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/lightbox.min.css" />
+    <!-- 
+    - preload images
+  -->
+    <!-- <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg"> -->
+    <!-- <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("Zn8razka08MrkrihU");
+      })();
+    </script>
+  </head>
+
+  <body>
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo"
+          ><img src="assets/images/spa-logo.png" alt=""
+        /></a>
+
+        <nav class="navbar" data-navbar>
+          <button
+            class="nav-close-btn"
+            aria-label="close menu"
+            data-nav-toggler
+          >
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+          <ul class="navbar-list">
+            <li>
+              <a href="index.html" class="navbar-link">Home</a>
+            </li>
+
+            <li>
+              <a href="about.html" class="navbar-link">About Us</a>
+            </li>
+
+            <li>
+              <a href="gallery.html" class="navbar-link">Gallery</a>
+            </li>
+
+            <li>
+              <a href="contact.html" class="navbar-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="cart_menu">
+          <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+            <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+
+        <!-- <div class="cart-modal" data-cart-modal>
+        <div class="cart-content">
+          <h2>Your Cart</h2>
+          <ul class="cart-items"></ul>
+        </div>
+      </div> -->
+      </div>
+    </header>
+
+    <main>
+      <article>
+
+        <!-- 
+        - #HERO
+      -->
+
+      <section class="section contact-hero" aria-label="home" id="home">
+        <div class="container">
+          <div class="-contact-hero-content">
+            <br /><br />
+
+            <h1 class="h1 hero-title">
+              Contact Us <br />
+            </h1>
+            
+            <p class="span">Bringing your dream events to life with elegance and creativity.</p>
+            <p class="section-text"></p>
+          </div>
+        </div>
+      </section>
+
+        <!-- 
+        - #Contact Us
+      -->  
+      <section class="section contact-us" id="contact-us">
+        <div class="container">
+          <div class="contact-content">
+      
+            <!-- Left Side (Form) -->
+            <div class="contact-left-side">
+                <h2 class="contact-heading">Book Your Dream Event Consultation</h2>
+                <form class="contact-form">
+                  <div class="form-grid">
+                    <!-- Full Name Field -->
+                    <div class="form-group">
+                      <label for="fullname" class="form-label">Full Name</label>
+                      <input 
+                        type="text" 
+                        id="fullname" 
+                        name="fullname" 
+                        class="form-field" 
+                        placeholder="Enter your full name" 
+                        required 
+                        autocomplete="name">
+                    </div>
+                    <!-- Email Field -->
+                    <div class="form-group">
+                      <label for="email" class="form-label">Email</label>
+                      <input 
+                        type="email" 
+                        name="email" 
+                        id="email" 
+                        class="form-field" 
+                        placeholder="Enter your email" 
+                        required 
+                        autocomplete="email">
+                    </div>
+                    <!-- Phone Number Field -->
+                    <div class="form-group">
+                      <label for="phone" class="form-label">Phone Number</label>
+                      <input 
+                        type="tel" 
+                        name="phone" 
+                        id="phone" 
+                        class="form-field" 
+                        placeholder="Enter your phone number" 
+                        required 
+                        autocomplete="tel"
+                        pattern="[0-9+()-\s]{10,}">
+                    </div>
+                    <!-- Subject Field -->
+                    <div class="form-group">
+                      <label for="subject" class="form-label">Subject</label>
+                      <input 
+                        type="text" 
+                        name="subject" 
+                        id="subject" 
+                        class="form-field" 
+                        placeholder="Enter the subject" 
+                        required>
+                    </div>
+                  </div>
+                  <!-- Message Field -->
+                  <div class="form-group">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea 
+                      id="message" 
+                      name="message" 
+                      class="form-field" 
+                      rows="5" 
+                      placeholder="Write your message here" 
+                      required>
+                    </textarea>
+                  </div>
+                  <!-- Submit Button -->
+                  <button type="submit" class="submit-btn">Submit</button>
+                </form>
+              </div>
+              
+      
+            <!-- Right Side (Image) -->
+            <div class="contact-right-side">
+              <img src="assets/images/img241.jpg" alt="Event Image" class="contact-image">
+            </div>
+      
+          </div>
+        </div>
+      </section>
+      
+      
+      
+      
+          
+      </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="section footer-top">
+          <div class="footer-brand">
+            <a href="" class="footer-logo">Tamazing Events</a>
+            <!-- <a href="#" class="">Wax & Co</a> -->
+
+            <p class="footer-text">
+              At Tamazing Events, we bring creativity, beauty, and style to life, transforming every event into an extraordinary experience. 
+              From private parties to public and traditional celebrations, our seasoned professionals deliver unmatched decor in Dallas, Texas.
+
+              Let us make your next event unforgettable. Connect with us through the links below or contact us today!
+
+
+            </p>
+
+            <ul class="social-list">
+              <li>
+                <a href="tel:08132566576" class="social-link">
+                  <ion-icon name="call-outline"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="mailto:Infowaxandco@gmail.com" class="social-link">
+                  <ion-icon name="mail-outline"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://www.instagram.com/waxandcoclinics?igsh=bnlxbzRnOWtyYmFw&utm_source=qr"
+                  class="social-link"
+                >
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Explore Us</p>
+            </li>
+
+            <li>
+              <a href="#about" class="footer-link">About Us</a>
+            </li>
+
+            <li>
+              <a href="#services" class="footer-link">Services</a>
+            </li>
+
+            <li>
+              <a href="#pricing" class="footer-link">Pricing</a>
+            </li>
+
+            <li>
+              <a href="#gallery" class="footer-link">Gallery</a>
+            </li>
+
+            <li>
+              <a href="#blog" class="footer-link">Blog & News</a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Address</p>
+            </li>
+
+            <li>
+              <a
+                href="https://maps.app.goo.gl/CKeoK9N2LDdg5zNs5"
+                class="footer-link"
+              >
+                Dallas Texas
+              </a>
+            </li>
+          </ul>
+
+          <div class="footer-list">
+            <p class="footer-list-title">Get in Touch</p>
+
+            <p class="footer-text">
+              Question or feedback? We’d love to hear from you
+            </p>
+
+            <a href="#appointment" class="btn">
+              <span class="span">Book Now</span>
+
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright">Copyright 2024 Tamazing Events All Right Reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - custom js link
+  -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script src="./assets/js/script.js"></script>
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/lightbox-plus-jquery.min.js"></script>
+    <script src="https://checkout.flutterwave.com/v3.js"></script>
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.17/dist/lenis.min.js"></script> 
+
+    <!-- <script src="./assets/js/add-cart.js"></script> -->
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+        
+  document.addEventListener('DOMContentLoaded', () => {
+    // Initialize EmailJS with your Public Key
+    emailjs.init('tjlqtV8hoQoPI3tzh');
+
+    // Get the form element
+    const form = document.querySelector('.contact-form');
+
+    // Handle form submission
+    form.addEventListener('submit', (event) => {
+      event.preventDefault(); // Prevent default form submission
+
+      // Gather form data
+      const formData = new FormData(form);
+      const data = {
+        fullname: formData.get('fullname'),
+        email: formData.get('email'),
+        phone: formData.get('phone'),
+        subject: formData.get('subject'),
+        message: formData.get('message'),
+      };
+
+      // Send email using EmailJS
+      emailjs
+        .send('service_z1lym8y', 'template_cyimqnf', data)
+        .then((response) => {
+          // Show SweetAlert success message
+          Swal.fire({
+            icon: 'success',
+            title: 'Message Sent!',
+            text: 'Thank you for reaching out. We will get back to you shortly.',
+            confirmButtonColor: '#3085d6',
+          });
+
+          form.reset(); // Reset the form after submission
+        })
+        .catch((error) => {
+          // Show SweetAlert error message
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops!',
+            text: 'Failed to send your message. Please try again later.',
+            confirmButtonColor: '#d33',
+          });
+
+          console.error('Error sending email:', error);
+        });
+    });
+  });
+
+    </script>
+  </body>
+</html>
