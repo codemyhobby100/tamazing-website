@@ -2393,3 +2393,19 @@ textarea.form-field {
   .footer-brand { padding-inline-end: 60px; }
 
 }
+
+/* Media query for screens up to 600px */
+@media screen and (max-width: 600px) {
+  .section-text {
+    font-size: 14px; /* Adjust font size for better readability on smaller screens */
+    line-height: 1.6; /* Increase line height for a calm and light feel */
+  }
+}
+
+/* Media query for very small screens (430px and below) */
+@media screen and (max-width: 430px) {
+  .section-text {
+    font-size: 12px; /* Make the text smaller for compact screens */
+    line-height: 1.5; /* Maintain comfortable readability */
+  }
+}
